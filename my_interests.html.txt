@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的興趣主題</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #e7e7e7;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的興趣主題</h1>
+    </header>
+    <main>
+        <h2>我感興趣的話題：</h2>
+        <ul>
+            <li>C++ 程式設計</li>
+            <li>各國硬體價格比較</li>
+            <li>數學問題解決</li>
+            <li>創建音樂播放清單</li>
+            <li>中文字練習</li>
+            <li>Minecraft 解謎地圖設計</li>
+            <li>PDF 內容提取</li>
+        </ul>
+    </main>
+</body>
+</html>
