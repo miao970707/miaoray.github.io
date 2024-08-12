@@ -6,46 +6,75 @@
     <title>我的自我介紹</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans TC', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #4a4a4a;
+            background-color: #3498db;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
         nav {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
-            text-align: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            margin: 0 15px;
         }
         nav ul li a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
+            padding: 15px 10px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #3498db;
         }
         .container {
-            width: 80%;
+            max-width: 800px;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 80px;
         }
         section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        section h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
         }
         footer {
-            background-color: #333;
+            background-color: #34495e;
             color: #fff;
             text-align: center;
             padding: 1rem;
@@ -53,7 +82,32 @@
             bottom: 0;
             width: 100%;
         }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -71,30 +125,31 @@
     <div class="container">
         <section id="about">
             <h2>關於我</h2>
-            <p>在這裡添加您的個人簡介。您可以描述您的興趣、目標和價值觀。讓讀者更好地了解您是誰，以及您的個性特點。</p>
+            <p>我在科技研究以及航空領域屬於略懂，目前正在學習如何架構github page與學習程式設計，準備要考apcs，希望有個好成績。目前我是高二生，就讀於彰化成功高中，在社團擔任成功高中科學社社長。</p>
         </section>
         
         <section id="skills">
             <h2>技能</h2>
-            <ul>
-                <li>技能1（例如：程式設計）</li>
-                <li>技能2（例如：項目管理）</li>
-                <li>技能3（例如：數據分析）</li>
-                <li>技能4（例如：外語能力）</li>
-            </ul>
+            <div class="skill-list">
+                <span class="skill-item">自學能力好</span>
+                <span class="skill-item">科技研究</span>
+                <span class="skill-item">網站架構</span>
+                <span class="skill-item">無線電操作</span>
+            </div>
         </section>
         
         <section id="contact">
             <h2>聯繫方式</h2>
-            <p>電子郵件：your.email@example.com</p>
-            <p>電話：+886 123 456 789</p>
-            <p>LinkedIn：linkedin.com/in/yourprofile</p>
-            <p>個人網站：www.yourwebsite.com</p>
+            <div class="contact-info">
+                <a href="https://www.instagram.com/miaoray0707/" target="_blank">Instagram: @miaoray0707</a>
+                <a href="https://www.instagram.com/miaoray0707/" target="_blank">LinkedIn</a>
+                <a href="https://miao970707.github.io/miaoray.github.io/" target="_blank">個人網站</a>
+            </div>
         </section>
     </div>
     
     <footer>
-        <p>&copy; 2024 我的自我介紹網站。保留所有權利。</p>
+        <p>&copy; 2024 版權所有。保留所有權利。</p>
     </footer>
 </body>
 </html>
