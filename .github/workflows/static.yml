@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的自我介紹</title>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 15px 10px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        section h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>我的自我介紹</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#skills">技能</a></li>
+            <li><a href="#contact">聯繫方式</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>關於我</h2>
+            <p>我在科技研究以及航空領域屬於略懂，目前正在學習如何架構github page與學習程式設計，準備要考apcs，希望有個好成績。目前我是高二生，就讀於彰化成功高中，在社團擔任成功高中科學社社長。</p>
+        </section>
+        
+        <section id="skills">
+            <h2>技能</h2>
+            <div class="skill-list">
+                <span class="skill-item">自學能力好</span>
+                <span class="skill-item">科技研究</span>
+                <span class="skill-item">網站架構</span>
+                <span class="skill-item">無線電操作</span>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>聯繫方式</h2>
+            <div class="contact-info">
+                <a href="https://www.instagram.com/miaoray0707/" target="_blank">Instagram: @miaoray0707</a>
+                <a href="https://www.instagram.com/miaoray0707/" target="_blank">LinkedIn</a>
+                <a href="https://miao970707.github.io/miaoray.github.io/" target="_blank">個人網站</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 版權所有。保留所有權利。</p>
+    </footer>
+</body>
+</html>
